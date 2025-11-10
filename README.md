@@ -8,6 +8,8 @@ This template provides everything you need to create a professional web portfoli
 
 ## Quick Start (No Command Line Required!)
 
+**Never used command line? No problem!** See [WEB_WORKFLOW.md](WEB_WORKFLOW.md) for a complete step-by-step guide with screenshots.
+
 ### Use as GitHub Template (Recommended)
 
 **All editing happens in your web browser - no downloads needed!**
