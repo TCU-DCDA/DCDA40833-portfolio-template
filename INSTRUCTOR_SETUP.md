@@ -4,41 +4,22 @@ This guide explains how to publish the portfolio template as a GitHub template r
 
 ---
 
-## Quick Setup (5 Minutes)
+## Quick Setup (COMPLETE ✅)
 
-### Step 1: Create GitHub Repository
+### ✅ Step 1: Repository Created
+Repository is live at: https://github.com/TCU-DCDA/WRIT20833-portfolio-template
 
-1. **Go to GitHub** and log in
-2. **Click "+" → "New repository"**
-3. **Fill in repository details:**
-   - **Repository name:** `WRIT20833-portfolio-template`
-   - **Description:** "Template for WRIT 20833 'When Coding Meets Culture' final project portfolios"
-   - **Visibility:** **Public** (required for students to use as template)
-   - **Do NOT** initialize with README (we already have one)
-   - Click **"Create repository"**
-
-### Step 2: Push Template to GitHub
-
-Run these commands in your terminal:
-
-```bash
-# Navigate to the template directory
-cd /Users/crode/Documents/00-GitHub/01-Teaching/WRIT20833/WRIT20833-portfolio-template
-
-# Add remote (replace YOUR-GITHUB-USERNAME with your actual username)
-git remote add origin https://github.com/YOUR-GITHUB-USERNAME/WRIT20833-portfolio-template.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
+### ✅ Step 2: Template Pushed to GitHub
+All files have been pushed successfully.
 
 ### Step 3: Enable Template Repository
 
-1. **Go to repository Settings** (on GitHub)
-2. **Scroll to "Template repository" section**
+**You still need to do this:**
+
+1. **Go to repository Settings:** https://github.com/TCU-DCDA/WRIT20833-portfolio-template/settings
+2. **Scroll to "Template repository" section** (near the bottom)
 3. **Check the box:** ☑️ "Template repository"
-4. **Save**
+4. **The page will refresh** - you'll see "Use this template" button appear
 
 That's it! Students can now click "Use this template" to create their own copies.
 
@@ -46,7 +27,7 @@ That's it! Students can now click "Use this template" to create their own copies
 
 ## Student Instructions
 
-Share this link with students: `https://github.com/YOUR-GITHUB-USERNAME/WRIT20833-portfolio-template`
+Share this link with students: **https://github.com/TCU-DCDA/WRIT20833-portfolio-template**
 
 ### How Students Use the Template
 
