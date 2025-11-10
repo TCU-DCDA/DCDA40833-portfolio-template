@@ -93,11 +93,11 @@ Open `index.html` in your text editor (VS Code recommended) and look for `<!-- T
 
 ### Step 3: Add Your Visualizations
 
-1. **Export charts from Jupyter** as PNG files (see code example below)
+1. **Export charts from Google Colab** as PNG files (see code example below)
 2. **Save PNG files** in the `images/` folder
 3. **Update image paths** in `index.html` to match your filenames
 
-**Example: Exporting from Jupyter**
+**Example: Exporting from Google Colab**
 
 ```python
 import matplotlib.pyplot as plt
@@ -110,7 +110,8 @@ plt.figure(figsize=(10, 6))
 plt.savefig('sentiment-distribution.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# Then move the PNG file to your portfolio-template/images/ folder
+# In Colab: Files tab (left sidebar) → Right-click file → Download
+# Then upload to GitHub in your portfolio's images/ folder
 ```
 
 ### Step 4: Include Code Examples
@@ -447,7 +448,7 @@ This template directly supports all HW5 deliverables:
    Portfolio sections mirror essay structure (question → methods → findings → reflection)
 
 2. **Python Notebooks** ✅
-   Footer links to GitHub repository with Jupyter notebooks
+   Footer links to GitHub repository with Google Colab notebooks
 
 3. **Dataset Documentation** ✅
    Data & Methods section provides complete dataset documentation
@@ -473,7 +474,7 @@ This template directly supports all HW5 deliverables:
 
 ### Tools
 - **VS Code** (Recommended editor): [code.visualstudio.com](https://code.visualstudio.com/)
-- **Jupyter for exports:** Your Google Colab notebooks
+- **Google Colab:** Your notebook environment for data analysis
 - **Image optimization:** Use `plt.savefig(..., dpi=300)` in Python
 - **Git GUI** (if you prefer visual): [GitHub Desktop](https://desktop.github.com/)
 

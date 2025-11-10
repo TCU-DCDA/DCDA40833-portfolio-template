@@ -325,7 +325,7 @@ If you made a bad edit:
 This workflow requires:
 - ✅ A web browser
 - ✅ A GitHub account
-- ✅ PNG files from your Jupyter notebooks
+- ✅ PNG files from your Google Colab notebooks
 
 This workflow does NOT require:
 - ❌ Command line / Terminal

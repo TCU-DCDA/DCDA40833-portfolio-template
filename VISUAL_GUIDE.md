@@ -214,7 +214,7 @@ Description (optional): [_________________]
 
 ## Slide 9: Step 8 - Upload Visualizations
 
-### Adding PNG Files from Jupyter
+### Adding PNG Files from Google Colab
 
 **First: Export from Google Colab**
 

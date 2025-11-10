@@ -48,7 +48,7 @@
    - Replace with your research content
 
 4. **Add images:**
-   - Export visualizations from Jupyter as PNG
+   - Export visualizations from Google Colab as PNG
    - Save to `images/` folder
 
 5. **Upload to GitHub:**

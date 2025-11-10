@@ -173,7 +173,7 @@ This lets you test the template as students will see it live.
 **Assignment Type:** External Tool or File Upload
 
 **Submission Requirements:**
-1. GitHub repository URL (with Jupyter notebooks)
+1. GitHub repository URL (with Google Colab notebooks)
 2. GitHub Pages URL (live portfolio)
 3. (Optional) PDF export of portfolio for backup
 
@@ -185,7 +185,7 @@ Final Project Submission
 Submit TWO links:
 
 1. GitHub Repository: https://github.com/YOUR-USERNAME/project-name
-   (This should contain your Jupyter notebooks and dataset)
+   (This should contain your Google Colab notebooks and dataset)
 
 2. GitHub Pages Portfolio: https://YOUR-USERNAME.github.io/project-name/
    (This is your live web portfolio)
