@@ -10,7 +10,7 @@ This final submission asks you to **refine, polish, and unify** your portfolio i
 
 ## Getting Started
 
-**New to this template?** See [EDITING_GUIDE.md](archive/EDITING_GUIDE.md) for a complete walkthrough of the editing workflow.
+**New to this template?** See [EDITING_GUIDE.md](EDITING_GUIDE.md) for a complete walkthrough of the editing workflow.
 
 ### Template Workflow
 
