@@ -1,6 +1,6 @@
 /* =========================
-   WRIT 20833 Portfolio Template
-   CSS Stylesheet for Research Project Portfolios
+   DCDA 40833 Skills Portfolio Template
+   CSS Stylesheet for Student Portfolios
    ========================= */
 
 /* =========================
@@ -294,6 +294,62 @@ tr:nth-child(even) {
 
 .framework-callout strong {
     color: var(--secondary-color);
+}
+
+/* =========================
+   Portfolio Cards
+   ========================= */
+/* Grid layout for portfolio cards on home page */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Individual portfolio card styling */
+.portfolio-card {
+    display: block;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.portfolio-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 16px rgba(77, 25, 121, 0.15);
+    transform: translateY(-4px);
+}
+
+.portfolio-card h3 {
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.portfolio-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0.75rem 0 0 0;
+    line-height: 1.5;
+}
+
+/* Lab tag badge on portfolio cards */
+.lab-tag {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* =========================
