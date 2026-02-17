@@ -64,11 +64,44 @@ nav {
     background-color: #3d1461;
     padding: 0.75rem;
     display: flex;              /* Make nav a flex container */
-    justify-content: center;    /* Center the ul inside nav */
+    justify-content: space-between;    /* Space between hamburger and menu */
+    align-items: center;        /* Vertically center items */
     position: sticky;           /* Stick to top when scrolling */
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 101;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Style the navigation list */
@@ -382,18 +415,64 @@ footer a:hover {
 
     nav {
         font-size: 0.9rem;
+        padding: 0.75rem 1rem; /* Add horizontal padding for hamburger */
     }
 
-    /* Stack navigation vertically on mobile */
+    /* Show hamburger button on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide nav by default on mobile - slides in from right */
     nav ul {
-        flex-direction: column;  /* Change from row to column */
-        align-items: center;     /* Center the stacked items */
+        position: fixed;
+        top: 0;
+        right: -100%;              /* Hidden off-screen */
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #3d1461;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5rem 2rem 2rem 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+        overflow-y: auto;
+        gap: 0;                    /* Remove gap for mobile */
+    }
+
+    /* Show nav when active */
+    nav ul.active {
+        right: 0;
+    }
+
+    nav li {
+        width: 100%;
+        margin: 0;
     }
 
     nav a {
         display: block;          /* Full width for easier tapping */
         width: 100%;
-        text-align: center;
+        text-align: left;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Overlay behind menu */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+    }
+
+    .nav-overlay.active {
+        display: block;
     }
 
     main section {
