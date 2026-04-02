@@ -34,6 +34,7 @@ __pycache__/
 # ignored HTML files
 sandbox.html
 practice.html
+playground.html
 
 
 # Do NOT ignore these:
